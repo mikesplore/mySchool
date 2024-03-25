@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace mySchool
 {
-    public partial class Form5 : Form
+    public partial class startup : Form
     {
-        public Form5()
+        public startup()
         {
             InitializeComponent();
         }
@@ -29,6 +29,11 @@ namespace mySchool
             Register register = new Register();
             register.Show();
             this.Hide();
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

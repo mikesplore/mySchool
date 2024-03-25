@@ -225,6 +225,7 @@
             this.Controls.Add(this.namelabel);
             this.Name = "Addrecord";
             this.Text = "Student Details";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.StudentDetails_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

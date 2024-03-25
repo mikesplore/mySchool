@@ -19,6 +19,12 @@ namespace mySchool
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtlstudentid.Text) ||
+            string.IsNullOrWhiteSpace(txtlpassword.Text))
+            {
+                MessageBox.Show("Please fill in all fields.");
+                return;
+            }
             string lstudentid = txtlstudentid.Text;
             string lpassword = txtlpassword.Text;
 

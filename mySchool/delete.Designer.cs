@@ -265,6 +265,7 @@
             this.Controls.Add(this.stdid);
             this.Name = "Deleteform";
             this.Text = "Delete Record";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

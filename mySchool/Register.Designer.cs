@@ -201,6 +201,7 @@
             this.Controls.Add(this.firstnamelabel);
             this.Name = "Register";
             this.Text = "RegisterForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

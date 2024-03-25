@@ -28,54 +28,80 @@ namespace mySchool
 
         private void registerbutton_Click(object sender, EventArgs e)
         {
+            // Check if any field is empty
+            if (string.IsNullOrWhiteSpace(txtStudentID.Text) ||
+                string.IsNullOrWhiteSpace(txtFirstName.Text) ||
+                string.IsNullOrWhiteSpace(txtLastName.Text) ||
+                string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                MessageBox.Show("Please fill in all fields.");
+                return;
+            }
+
             string connectionString = "Server=localhost;Uid=root;Pwd=mikemike;";
 
             string createDatabaseQuery = "CREATE DATABASE IF NOT EXISTS MySchool";
 
-            string createTableQuery = "CREATE TABLE IF NOT EXISTS MySchool.StudentDetails (studentid VARCHAR(15), firstname VARCHAR(50), lastname VARCHAR(50), password VARCHAR(50), myclass VARCHAR(50), dob VARCHAR(10), gender VARCHAR(50))";
+            string createTableQuery = @"CREATE TABLE IF NOT EXISTS MySchool.StudentDetails (
+                                    studentid VARCHAR(15) PRIMARY KEY,
+                                    firstname VARCHAR(50),
+                                    lastname VARCHAR(50),
+                                    password VARCHAR(50),
+                                    myclass VARCHAR(50),
+                                    dob VARCHAR(10),
+                                    gender VARCHAR(50)
+                                )";
 
+            string studentid = txtStudentID.Text;
             string firstname = txtFirstName.Text;
             string lastname = txtLastName.Text;
             string password = txtPassword.Text;
-            string studentid = txtStudentID.Text;
-            string deletetable = "DELETE FROM StudentDetails";
             string insertQuery = $"INSERT INTO MySchool.StudentDetails (studentid, firstname, lastname, password) VALUES ('{studentid}', '{firstname}', '{lastname}', '{password}')";
-            string droptable = "DROP TABLE StudentDetails";
+
             MySqlConnection connection = new MySqlConnection(connectionString);
             MySqlCommand createDatabaseCommand = new MySqlCommand(createDatabaseQuery, connection);
             MySqlCommand createTableCommand = new MySqlCommand(createTableQuery, connection);
             MySqlCommand insertCommand = new MySqlCommand(insertQuery, connection);
-            MySqlCommand deleteCommand = new MySqlCommand(deletetable, connection);
-            MySqlCommand droptableCommand = new MySqlCommand(droptable, connection);
-
 
             try
             {
                 connection.Open();
-                
+
                 createDatabaseCommand.ExecuteNonQuery();
                 connection.ChangeDatabase("MySchool");
-                //droptableCommand.ExecuteNonQuery();
-                //deleteCommand.ExecuteNonQuery();
-                createTableCommand.ExecuteNonQuery();               
+                createTableCommand.ExecuteNonQuery();
+
+                // Check if the student ID already exists
+                string checkStudentQuery = $"SELECT COUNT(*) FROM MySchool.StudentDetails WHERE studentid = '{studentid}'";
+                MySqlCommand checkStudentCommand = new MySqlCommand(checkStudentQuery, connection);
+                int studentCount = Convert.ToInt32(checkStudentCommand.ExecuteScalar());
+
+                if (studentCount > 0)
+                {
+                    MessageBox.Show("Student ID already exists. Please enter a unique student ID.");
+                    return; // Exit the method to prevent further execution
+                }
+
                 insertCommand.ExecuteNonQuery();
 
                 MessageBox.Show("Data saved successfully");
-                //navigate to login form
-                Login Login = new Login();
-                Login.Show();
-                
+
+                // Navigate to login form
+                Login loginForm = new Login();
+                loginForm.Show();
                 this.Hide();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error occurred: {ex.Message}");
+                MessageBox.Show($"An error occurred: {ex.Message}");
             }
             finally
             {
                 connection.Close();
             }
         }
+
+
 
         private void clearbutton_Click(object sender, EventArgs e)
         {
