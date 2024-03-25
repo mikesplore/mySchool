@@ -13,9 +13,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace mySchool
 {
-    public partial class StudentDetails : Form
+    public partial class Addrecord : Form
     {
-        public StudentDetails()
+        public Addrecord()
         {
             InitializeComponent();
             dobpicker.ValueChanged += dobpicker_ValueChanged;
@@ -74,7 +74,7 @@ namespace mySchool
             else
             {
                 MessageBox.Show("Why are you gay?");
-                return; // No need to continue if gender is not selected
+                return;
             }
 
             string connectionString = "Server=localhost;Uid=root;Pwd=mikemike;";
@@ -91,6 +91,9 @@ namespace mySchool
                 if (rowsAffected > 0)
                 {
                     MessageBox.Show("Details updated successfully");
+                    Navigation navigation = new Navigation();
+                    navigation.Show();
+                    this.Hide();
                 }
                 else
                 {

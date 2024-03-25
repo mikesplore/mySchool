@@ -1,12 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 
 namespace mySchool
@@ -32,6 +26,7 @@ namespace mySchool
             string query = $"SELECT password FROM StudentDetails WHERE studentid = '{lstudentid}'";
 
             MySqlConnection connection = new MySqlConnection(connectionString);
+
             MySqlCommand command = new MySqlCommand(query, connection);
 
             try
@@ -39,18 +34,16 @@ namespace mySchool
                 connection.Open();
                 object result = command.ExecuteScalar();
 
-                if (result != null) // Student ID found
+                if (result != null)
                 {
                     string storedPassword = result.ToString();
 
                     if (lpassword == storedPassword)
                     {
-                        MessageBox.Show("Login successful");
-                        //navigate to form2
-                        StudentDetails studentDetails = new StudentDetails();
-
-                        // Show Form2 and hide Form1
-                        studentDetails.Show();
+                        //navigate to navigation form
+                        Navigation navigation = new Navigation();
+                        navigation.Show();
+                       
                         this.Hide();
                     }
                     else

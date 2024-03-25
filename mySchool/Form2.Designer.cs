@@ -33,6 +33,7 @@
             this.txtlpassword = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // studentid
@@ -40,8 +41,8 @@
             this.studentid.AutoSize = true;
             this.studentid.BackColor = System.Drawing.Color.Transparent;
             this.studentid.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentid.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.studentid.Location = new System.Drawing.Point(1145, 73);
+            this.studentid.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.studentid.Location = new System.Drawing.Point(606, 143);
             this.studentid.Name = "studentid";
             this.studentid.Size = new System.Drawing.Size(123, 25);
             this.studentid.TabIndex = 0;
@@ -52,7 +53,8 @@
             // 
             this.txtlstudentid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtlstudentid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlstudentid.Location = new System.Drawing.Point(1114, 121);
+            this.txtlstudentid.Location = new System.Drawing.Point(575, 191);
+            this.txtlstudentid.Multiline = false;
             this.txtlstudentid.Name = "txtlstudentid";
             this.txtlstudentid.Size = new System.Drawing.Size(189, 39);
             this.txtlstudentid.TabIndex = 1;
@@ -63,7 +65,8 @@
             // 
             this.txtlpassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtlpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlpassword.Location = new System.Drawing.Point(1114, 251);
+            this.txtlpassword.Location = new System.Drawing.Point(575, 321);
+            this.txtlpassword.Multiline = false;
             this.txtlpassword.Name = "txtlpassword";
             this.txtlpassword.Size = new System.Drawing.Size(189, 39);
             this.txtlpassword.TabIndex = 3;
@@ -75,8 +78,8 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(1145, 203);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(606, 273);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 25);
             this.label1.TabIndex = 2;
@@ -88,7 +91,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(1150, 337);
+            this.button1.Location = new System.Drawing.Point(611, 407);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 40);
             this.button1.TabIndex = 4;
@@ -96,13 +99,24 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(560, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(228, 68);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "LOGIN";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::mySchool.Properties.Resources.v617batch2_bb_01_technology;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImage = global::mySchool.Properties.Resources.Cute_Blue_System_Background_Widescreen_And_HD_Background_Wallpaper;
             this.ClientSize = new System.Drawing.Size(1391, 629);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtlpassword);
             this.Controls.Add(this.label1);
@@ -123,5 +137,6 @@
         private System.Windows.Forms.RichTextBox txtlpassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
     }
 }

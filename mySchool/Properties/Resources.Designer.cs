@@ -63,6 +63,16 @@ namespace mySchool.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cute_Blue_System_Background_Widescreen_And_HD_Background_Wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("Cute Blue System Background Widescreen And HD Background Wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rm378_08 {
             get {
                 object obj = ResourceManager.GetObject("rm378-08", resourceCulture);

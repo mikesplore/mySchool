@@ -38,6 +38,7 @@
             this.passwordlabel = new System.Windows.Forms.Label();
             this.registerbutton = new System.Windows.Forms.Button();
             this.clearbutton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // firstnamelabel
@@ -45,8 +46,8 @@
             this.firstnamelabel.AutoSize = true;
             this.firstnamelabel.BackColor = System.Drawing.Color.Transparent;
             this.firstnamelabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstnamelabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.firstnamelabel.Location = new System.Drawing.Point(650, 47);
+            this.firstnamelabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.firstnamelabel.Location = new System.Drawing.Point(130, 136);
             this.firstnamelabel.Name = "firstnamelabel";
             this.firstnamelabel.Size = new System.Drawing.Size(124, 25);
             this.firstnamelabel.TabIndex = 0;
@@ -55,22 +56,26 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(655, 89);
+            this.txtFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtFirstName.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtFirstName.Location = new System.Drawing.Point(135, 178);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(314, 30);
+            this.txtFirstName.Size = new System.Drawing.Size(314, 34);
             this.txtFirstName.TabIndex = 1;
+            this.txtFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtFirstName.TextChanged += new System.EventHandler(this.txtFirstName_TextChanged);
             // 
             // txtStudentID
             // 
-            this.txtStudentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtStudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStudentID.Location = new System.Drawing.Point(655, 199);
+            this.txtStudentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtStudentID.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStudentID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtStudentID.Location = new System.Drawing.Point(135, 288);
             this.txtStudentID.Name = "txtStudentID";
-            this.txtStudentID.Size = new System.Drawing.Size(314, 30);
+            this.txtStudentID.Size = new System.Drawing.Size(314, 34);
             this.txtStudentID.TabIndex = 3;
+            this.txtStudentID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtStudentID.TextChanged += new System.EventHandler(this.txtStudentID_TextChanged);
             // 
             // studentidlabel
@@ -78,8 +83,8 @@
             this.studentidlabel.AutoSize = true;
             this.studentidlabel.BackColor = System.Drawing.Color.Transparent;
             this.studentidlabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentidlabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.studentidlabel.Location = new System.Drawing.Point(650, 157);
+            this.studentidlabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.studentidlabel.Location = new System.Drawing.Point(130, 246);
             this.studentidlabel.Name = "studentidlabel";
             this.studentidlabel.Size = new System.Drawing.Size(123, 25);
             this.studentidlabel.TabIndex = 2;
@@ -88,12 +93,14 @@
             // 
             // txtLastName
             // 
-            this.txtLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(1064, 89);
+            this.txtLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtLastName.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtLastName.Location = new System.Drawing.Point(544, 178);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(314, 30);
+            this.txtLastName.Size = new System.Drawing.Size(314, 34);
             this.txtLastName.TabIndex = 5;
+            this.txtLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtLastName.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
             // 
             // lastnamelabel
@@ -101,8 +108,8 @@
             this.lastnamelabel.AutoSize = true;
             this.lastnamelabel.BackColor = System.Drawing.Color.Transparent;
             this.lastnamelabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastnamelabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lastnamelabel.Location = new System.Drawing.Point(1059, 47);
+            this.lastnamelabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lastnamelabel.Location = new System.Drawing.Point(539, 136);
             this.lastnamelabel.Name = "lastnamelabel";
             this.lastnamelabel.Size = new System.Drawing.Size(121, 25);
             this.lastnamelabel.TabIndex = 4;
@@ -111,13 +118,15 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(1064, 199);
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtPassword.Location = new System.Drawing.Point(544, 288);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(314, 30);
+            this.txtPassword.Size = new System.Drawing.Size(314, 34);
             this.txtPassword.TabIndex = 7;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // passwordlabel
@@ -125,8 +134,8 @@
             this.passwordlabel.AutoSize = true;
             this.passwordlabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordlabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordlabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.passwordlabel.Location = new System.Drawing.Point(1059, 157);
+            this.passwordlabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.passwordlabel.Location = new System.Drawing.Point(539, 246);
             this.passwordlabel.Name = "passwordlabel";
             this.passwordlabel.Size = new System.Drawing.Size(160, 25);
             this.passwordlabel.TabIndex = 6;
@@ -135,10 +144,10 @@
             // 
             // registerbutton
             // 
-            this.registerbutton.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.registerbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.registerbutton.Location = new System.Drawing.Point(1064, 394);
+            this.registerbutton.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.registerbutton.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerbutton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.registerbutton.Location = new System.Drawing.Point(544, 384);
             this.registerbutton.Name = "registerbutton";
             this.registerbutton.Size = new System.Drawing.Size(146, 45);
             this.registerbutton.TabIndex = 8;
@@ -148,10 +157,10 @@
             // 
             // clearbutton
             // 
-            this.clearbutton.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.clearbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.clearbutton.Location = new System.Drawing.Point(823, 394);
+            this.clearbutton.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.clearbutton.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearbutton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clearbutton.Location = new System.Drawing.Point(303, 384);
             this.clearbutton.Name = "clearbutton";
             this.clearbutton.Size = new System.Drawing.Size(146, 45);
             this.clearbutton.TabIndex = 9;
@@ -159,14 +168,27 @@
             this.clearbutton.UseVisualStyleBackColor = false;
             this.clearbutton.Click += new System.EventHandler(this.clearbutton_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(369, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(337, 68);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "REGISTER";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BackgroundImage = global::mySchool.Properties.Resources.v617batch2_bb_01_technology;
+            this.BackgroundImage = global::mySchool.Properties.Resources.Cute_Blue_System_Background_Widescreen_And_HD_Background_Wallpaper;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1837, 864);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.clearbutton);
             this.Controls.Add(this.registerbutton);
             this.Controls.Add(this.txtPassword);
@@ -197,6 +219,7 @@
         private System.Windows.Forms.Label passwordlabel;
         private System.Windows.Forms.Button registerbutton;
         private System.Windows.Forms.Button clearbutton;
+        private System.Windows.Forms.Label label1;
     }
 }
 

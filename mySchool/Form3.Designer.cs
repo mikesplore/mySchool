@@ -1,6 +1,6 @@
 ﻿namespace mySchool
 {
-    partial class StudentDetails
+    partial class Addrecord
     {
         /// <summary>
         /// Required designer variable.
@@ -40,6 +40,7 @@
             this.rbisex = new System.Windows.Forms.RadioButton();
             this.rcomplicated = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // namelabel
@@ -47,8 +48,8 @@
             this.namelabel.AutoSize = true;
             this.namelabel.BackColor = System.Drawing.Color.Transparent;
             this.namelabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namelabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.namelabel.Location = new System.Drawing.Point(117, 48);
+            this.namelabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelabel.Location = new System.Drawing.Point(203, 158);
             this.namelabel.Name = "namelabel";
             this.namelabel.Size = new System.Drawing.Size(123, 25);
             this.namelabel.TabIndex = 0;
@@ -59,7 +60,8 @@
             // 
             this.txtstudentid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtstudentid.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtstudentid.Location = new System.Drawing.Point(38, 93);
+            this.txtstudentid.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtstudentid.Location = new System.Drawing.Point(160, 203);
             this.txtstudentid.Name = "txtstudentid";
             this.txtstudentid.Size = new System.Drawing.Size(221, 31);
             this.txtstudentid.TabIndex = 1;
@@ -70,8 +72,8 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(558, 148);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(680, 273);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 25);
             this.label1.TabIndex = 2;
@@ -81,7 +83,8 @@
             // 
             this.txtclass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtclass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtclass.Location = new System.Drawing.Point(45, 208);
+            this.txtclass.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtclass.Location = new System.Drawing.Point(160, 311);
             this.txtclass.Name = "txtclass";
             this.txtclass.Size = new System.Drawing.Size(221, 31);
             this.txtclass.TabIndex = 5;
@@ -92,8 +95,8 @@
             this.classlabel.AutoSize = true;
             this.classlabel.BackColor = System.Drawing.Color.Transparent;
             this.classlabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.classlabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.classlabel.Location = new System.Drawing.Point(124, 163);
+            this.classlabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.classlabel.Location = new System.Drawing.Point(246, 273);
             this.classlabel.Name = "classlabel";
             this.classlabel.Size = new System.Drawing.Size(64, 25);
             this.classlabel.TabIndex = 4;
@@ -104,8 +107,8 @@
             this.rbfemale.AutoSize = true;
             this.rbfemale.BackColor = System.Drawing.Color.Transparent;
             this.rbfemale.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbfemale.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rbfemale.Location = new System.Drawing.Point(603, 201);
+            this.rbfemale.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rbfemale.Location = new System.Drawing.Point(725, 311);
             this.rbfemale.Name = "rbfemale";
             this.rbfemale.Size = new System.Drawing.Size(77, 21);
             this.rbfemale.TabIndex = 8;
@@ -118,8 +121,8 @@
             this.rbmale.AutoSize = true;
             this.rbmale.BackColor = System.Drawing.Color.Transparent;
             this.rbmale.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbmale.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rbmale.Location = new System.Drawing.Point(511, 201);
+            this.rbmale.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rbmale.Location = new System.Drawing.Point(633, 311);
             this.rbmale.Name = "rbmale";
             this.rbmale.Size = new System.Drawing.Size(63, 21);
             this.rbmale.TabIndex = 9;
@@ -132,8 +135,8 @@
             this.dobdate.AutoSize = true;
             this.dobdate.BackColor = System.Drawing.Color.Transparent;
             this.dobdate.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dobdate.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dobdate.Location = new System.Drawing.Point(558, 48);
+            this.dobdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dobdate.Location = new System.Drawing.Point(680, 158);
             this.dobdate.Name = "dobdate";
             this.dobdate.Size = new System.Drawing.Size(75, 25);
             this.dobdate.TabIndex = 11;
@@ -142,7 +145,7 @@
             // 
             // dobpicker
             // 
-            this.dobpicker.Location = new System.Drawing.Point(490, 93);
+            this.dobpicker.Location = new System.Drawing.Point(612, 203);
             this.dobpicker.Name = "dobpicker";
             this.dobpicker.Size = new System.Drawing.Size(200, 22);
             this.dobpicker.TabIndex = 12;
@@ -153,8 +156,8 @@
             this.rbisex.AutoSize = true;
             this.rbisex.BackColor = System.Drawing.Color.Transparent;
             this.rbisex.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbisex.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rbisex.Location = new System.Drawing.Point(511, 243);
+            this.rbisex.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rbisex.Location = new System.Drawing.Point(633, 353);
             this.rbisex.Name = "rbisex";
             this.rbisex.Size = new System.Drawing.Size(86, 21);
             this.rbisex.TabIndex = 13;
@@ -168,8 +171,8 @@
             this.rcomplicated.AutoSize = true;
             this.rcomplicated.BackColor = System.Drawing.Color.Transparent;
             this.rcomplicated.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rcomplicated.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rcomplicated.Location = new System.Drawing.Point(603, 243);
+            this.rcomplicated.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rcomplicated.Location = new System.Drawing.Point(725, 353);
             this.rcomplicated.Name = "rcomplicated";
             this.rcomplicated.Size = new System.Drawing.Size(111, 21);
             this.rcomplicated.TabIndex = 14;
@@ -182,7 +185,7 @@
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(338, 348);
+            this.button1.Location = new System.Drawing.Point(460, 458);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 47);
             this.button1.TabIndex = 15;
@@ -190,13 +193,24 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // StudentDetails
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(269, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(465, 68);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "ADD RECORDS";
+            // 
+            // Addrecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::mySchool.Properties.Resources.v617batch2_bb_01_technology;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::mySchool.Properties.Resources.Cute_Blue_System_Background_Widescreen_And_HD_Background_Wallpaper;
+            this.ClientSize = new System.Drawing.Size(1391, 632);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.rcomplicated);
             this.Controls.Add(this.rbisex);
@@ -209,7 +223,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtstudentid);
             this.Controls.Add(this.namelabel);
-            this.Name = "StudentDetails";
+            this.Name = "Addrecord";
             this.Text = "Student Details";
             this.Load += new System.EventHandler(this.StudentDetails_Load);
             this.ResumeLayout(false);
@@ -231,5 +245,6 @@
         private System.Windows.Forms.RadioButton rbisex;
         private System.Windows.Forms.RadioButton rcomplicated;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
     }
 }

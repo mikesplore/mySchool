@@ -61,11 +61,10 @@ namespace mySchool
                 insertCommand.ExecuteNonQuery();
 
                 MessageBox.Show("Data saved successfully");
-                //navigate to form2
+                //navigate to login form
                 Login Login = new Login();
-
-                // Show Form2 and hide Form1
                 Login.Show();
+                
                 this.Hide();
             }
             catch (Exception ex)
