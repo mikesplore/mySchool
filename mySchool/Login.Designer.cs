@@ -30,10 +30,10 @@
         {
             this.studentid = new System.Windows.Forms.Label();
             this.txtlstudentid = new System.Windows.Forms.RichTextBox();
-            this.txtlpassword = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtlpassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // studentid
@@ -60,18 +60,6 @@
             this.txtlstudentid.TabIndex = 1;
             this.txtlstudentid.Text = "";
             this.txtlstudentid.TextChanged += new System.EventHandler(this.txtlstudentid_TextChanged);
-            // 
-            // txtlpassword
-            // 
-            this.txtlpassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtlpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlpassword.Location = new System.Drawing.Point(575, 321);
-            this.txtlpassword.Multiline = false;
-            this.txtlpassword.Name = "txtlpassword";
-            this.txtlpassword.Size = new System.Drawing.Size(189, 39);
-            this.txtlpassword.TabIndex = 3;
-            this.txtlpassword.Text = "";
-            this.txtlpassword.TextChanged += new System.EventHandler(this.txtlpassword_TextChanged);
             // 
             // label1
             // 
@@ -110,15 +98,26 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "LOGIN";
             // 
+            // txtlpassword
+            // 
+            this.txtlpassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtlpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtlpassword.Location = new System.Drawing.Point(575, 333);
+            this.txtlpassword.MinimumSize = new System.Drawing.Size(189, 35);
+            this.txtlpassword.Name = "txtlpassword";
+            this.txtlpassword.PasswordChar = '*';
+            this.txtlpassword.Size = new System.Drawing.Size(189, 22);
+            this.txtlpassword.TabIndex = 6;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::mySchool.Properties.Resources.Cute_Blue_System_Background_Widescreen_And_HD_Background_Wallpaper;
-            this.ClientSize = new System.Drawing.Size(1391, 629);
+            this.ClientSize = new System.Drawing.Size(1391, 653);
+            this.Controls.Add(this.txtlpassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtlpassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtlstudentid);
             this.Controls.Add(this.studentid);
@@ -134,9 +133,9 @@
 
         private System.Windows.Forms.Label studentid;
         private System.Windows.Forms.RichTextBox txtlstudentid;
-        private System.Windows.Forms.RichTextBox txtlpassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtlpassword;
     }
 }

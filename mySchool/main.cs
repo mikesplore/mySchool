@@ -30,5 +30,10 @@ namespace mySchool
             register.Show();
             this.Hide();
         }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
