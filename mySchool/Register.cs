@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 
-
+   
 namespace mySchool
 {
     public partial class Register : Form

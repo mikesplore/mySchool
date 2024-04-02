@@ -102,13 +102,15 @@
             // 
             this.txtlpassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtlpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtlpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtlpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlpassword.Location = new System.Drawing.Point(575, 333);
+            this.txtlpassword.MaxLength = 10;
             this.txtlpassword.MinimumSize = new System.Drawing.Size(189, 35);
             this.txtlpassword.Name = "txtlpassword";
             this.txtlpassword.PasswordChar = '*';
-            this.txtlpassword.Size = new System.Drawing.Size(189, 35);
+            this.txtlpassword.Size = new System.Drawing.Size(189, 30);
             this.txtlpassword.TabIndex = 6;
+            this.txtlpassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Login
             // 
