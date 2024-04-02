@@ -51,7 +51,7 @@ namespace mySchool
                     string gender = reader["gender"].ToString();
                     string studentClass = reader["myclass"].ToString();
 
-                    // Displa or use the retrieved information as needed
+                    // Display or use the retrieved information as needed
                     txtLName.Text =lastName;
                     txtFName.Text =firstName;
                     txtDOB.Text = dob;
