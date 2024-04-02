@@ -51,7 +51,7 @@ namespace mySchool
                     string gender = reader["gender"].ToString();
                     string studentClass = reader["myclass"].ToString();
 
-                    // Display or use the retrieved information as neded
+                    // Display or use the retrieved information as nede
                     txtLName.Text =lastName;
                     txtFName.Text =firstName;
                     txtDOB.Text = dob;
